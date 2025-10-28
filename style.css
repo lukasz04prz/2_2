@@ -2,3 +2,18 @@ html {
   height: 100%;
   width: 100%;
 }
+
+.post {
+  margin: 1em auto 0px auto;
+  border: 1px solid black;
+  background-color: white;
+  justify-content: center;
+}
+
+.post>h3 {
+  color: blueviolet;
+}
+
+.post>span {
+  background-color: lightgray;
+}
