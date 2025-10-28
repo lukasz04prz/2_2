@@ -19,11 +19,17 @@
   })
 
   cw2.addEventListener("click", async function () {
-    answer.textContent = "Loading..."
+      const popup = document.createElement('div');
+      popup.classList.add('popup');
+      const text = document.createElement('span');
+      text.textContent = "Loading...";
+      popup.appendChild(text);
+  
+      document.body.appendChild(popup);
 
       const posts = await fetch('https://jsonplaceholder.typicode.com/posts').then(res => res.json());
       console.log(posts);
-
+      
       console.log(posts[5].userId);
       const list = posts.map(post => {
         const li = document.createElement('li');
@@ -46,6 +52,7 @@
 
       answer.innerHTML = "";
       answer.appendChild(ul);
+      popup.remove();
     
   })
 

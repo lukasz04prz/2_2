@@ -17,3 +17,23 @@ html {
 .post>span {
   background-color: lightgray;
 }
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #292929d7;
+}
+
+.popup span {
+  color: white;
+  font-size: large;
+  padding: 1em;
+  border-radius: 0.5em;
+  background-color: #1f1f1f;
+}
